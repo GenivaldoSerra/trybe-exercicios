@@ -1,0 +1,30 @@
+div:hover {
+    background-color: #74c69d;
+}
+.div1:hover {
+    background-color:#2a6f97;
+    color: white;
+    font-style: italic;
+}
+.div2:hover {
+    background-color: #821415;
+    color: white;
+}
+.div3:hover {
+    background-color: #7b2cbf;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+.div4:hover {
+    background-color: #38b000;
+    color: white;
+}
+.div5:hover {
+    background-color: #ff9500;
+    color: white;
+    font-style: italic;
+}
+
+/*---------*/
+
