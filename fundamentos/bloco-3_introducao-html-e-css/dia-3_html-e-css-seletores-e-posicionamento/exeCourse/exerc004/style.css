@@ -19,3 +19,19 @@ li {
 .negrito{
     font-weight: bold;
 }
+.azul {
+    color: #002855;
+}
+.fundo-rosa {
+    background-color: #f07167;
+}
+.starck-dev:hover {
+    background-color: #ffd000;
+}
+.w3s-trybe:hover {
+    background-color: #8ac926;
+}
+.mdn:hover {
+    background-color: black;
+    color: white;
+}
