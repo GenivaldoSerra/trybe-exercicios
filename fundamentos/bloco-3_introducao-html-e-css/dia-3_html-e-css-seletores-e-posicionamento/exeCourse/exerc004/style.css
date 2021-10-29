@@ -1,0 +1,21 @@
+.lista-amarela {
+    background-color: #ffd000;
+}
+.lista-impar {
+    text-transform: uppercase;
+}
+.lista-par {
+    background-color: #2b9348;
+}
+h1, h3 {
+    color: #821415;
+}
+h1.principal {
+    font-size: 40px;
+}
+li {
+    font-size: 20px;
+}
+.negrito{
+    font-weight: bold;
+}
