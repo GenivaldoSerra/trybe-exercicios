@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Ubuntu:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'ubuntu', sans-serif;
+}
+
+#navbar{
+    width: 100%;
+    background: #03045e;
+    color: #fff;
+    height: 80px;
+}
+.navbar-container{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+}
+.navbar-itens{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+.navbar-itens li{
+    padding: 10px;
+}
+#cabecalho{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: url(stom-header.jpg) no-repeat center center/cover;
+}
