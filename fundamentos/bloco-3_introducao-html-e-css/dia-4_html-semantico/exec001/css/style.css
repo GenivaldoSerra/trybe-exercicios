@@ -11,16 +11,17 @@ body{
 
 #navbar{
     width: 100%;
-    background: #03045e;
+    background: #0077b6;
     color: #fff;
     height: 80px;
+    position: fixed;
 }
 .navbar-container{
     width: 80%;
     margin: auto;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;/* cria um espaço entre os itens "Logo" e "Menu" */
     align-items: center;
 }
 .logo{
@@ -40,5 +41,13 @@ body{
     justify-content: center;
     align-items: center;
     color: #fff;
-    background: url(stom-header.jpg) no-repeat center center/cover;
+    background: url(/fundamentos/bloco-3_introducao-html-e-css/dia-4_html-semantico/exec001/img/stom-header.jpg) no-repeat center center/cover;
+    background-color: rgb(0, 0, 0, 0.3);
+    background-blend-mode: color;
+}
+.cabecalho-container{
+    text-align: center;
+}
+.cabecalho-container h2{
+    font-size: 2rem;
 }
