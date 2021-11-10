@@ -52,3 +52,6 @@ let car = {
 for (let key in car) {
   console.log(key, car[key]);
 }
+
+/* Exercícios sobre Functions */
+// Primeira questão
