@@ -31,3 +31,9 @@ let elementSectionRight = document.createElement('section');
       elementMain.appendChild(elementSectionRight);
 
 // Questão - 07
+let elementImg = document.createElement('img');
+      elementImg.className = 'small-image';
+      elementSectionLeft.appendChild(elementImg);
+      elementImg.src = 'https://picsum.photos/200'
+
+// Questao - 08
