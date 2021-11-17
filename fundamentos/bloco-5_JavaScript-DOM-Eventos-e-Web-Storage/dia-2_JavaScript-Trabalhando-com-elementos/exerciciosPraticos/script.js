@@ -7,7 +7,7 @@ let elementH1 = document.createElement('h1');
 // Questão - 02
 let elementMain = document.createElement('main');
       elementMain.className = 'main-content';
-      document.body.appendChild(elementMain);
+      document.body.appendChild(elementMain);  
 
 
 // Questão - 03
@@ -37,3 +37,13 @@ let elementImg = document.createElement('img');
       elementImg.src = 'https://picsum.photos/200'
 
 // Questao - 08
+let elementUl = document.createElement('ul');
+      elementSectionRight.appendChild(elementUl);
+let arrayNumeroStr = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+for (let numero = 0; numero < arrayNumeroStr.length; numero += 1) {
+      let elementLi = document.createElement('li');
+      elementLi.innerHTML = arrayNumeroStr[numero];
+      elementUl.appendChild(elementLi);
+} 
+
+// Questão - 09
