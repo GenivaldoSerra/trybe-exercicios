@@ -1,3 +1,5 @@
+/* Primeira parte do Exercício */
+
 // Questão - 01
 let elementH1 = document.createElement('h1');
       elementH1.innerText = 'Exercício 5.2 - JavaScript DOM';
@@ -47,3 +49,11 @@ for (let numero = 0; numero < arrayNumeroStr.length; numero += 1) {
 } 
 
 // Questão - 09
+for (let indice = 0; indice <= 3; indice += 1) {
+      let elementH3 = document.createElement('h3');
+      elementH3.innerText = 'Questão 09';
+      elementMain.appendChild(elementH3);
+}
+
+/* Segunda parte do Exercício */
+
