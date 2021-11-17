@@ -9,3 +9,7 @@ let elementMain = document.createElement('main');
       document.body.appendChild(elementMain);
 
 // Questão - 03
+let elementSectionCenter = document.createElement('section');
+      elementSectionCenter.className = 'center-content';
+      elementMain.appendChild(elementSectionCenter);
+      
