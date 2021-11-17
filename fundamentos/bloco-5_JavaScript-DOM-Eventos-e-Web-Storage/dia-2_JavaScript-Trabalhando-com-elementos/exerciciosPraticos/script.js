@@ -26,3 +26,8 @@ let elementSectionLeft = document.createElement('section');
       elementMain.appendChild(elementSectionLeft);
 
 // Questão - 06
+let elementSectionRight = document.createElement('section');
+      elementSectionRight.className = 'right-content';
+      elementMain.appendChild(elementSectionRight);
+
+// Questão - 07
