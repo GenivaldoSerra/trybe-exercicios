@@ -21,3 +21,8 @@ let elementP = document.createElement('p');
       elementP.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis iaculis nibh quis porta. Aliquam bibendum pharetra tincidunt. Integer at commodo purus, in facilisis eros. Maecenas suscipit magna ut quam auctor feugiat. Donec viverra ex nec mauris mollis fermentum. Vestibulum tempor feugiat libero, nec pulvinar sem suscipit cursus.'
 
 // Questão - 05
+let elementSectionLeft = document.createElement('section');
+      elementSectionLeft.className = 'left-content';
+      elementMain.appendChild(elementSectionLeft);
+
+// Questão - 06
