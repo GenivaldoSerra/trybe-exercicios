@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Currículo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header id="cabecalho">
+    <h1>Cadastro de Currículo</h1>
+  </header>
+  <main id="principal">
+    <section id="container">
+      <form action="">
+        <fieldset id="dadosPessoais">
+          <label for="nome">Nome:
+            <input type="text" name="nome" id="nomeCandidato" required maxlength="40">
+          </label>
+          <label for="email">E-mail:
+            <input type="email" name="email" id="emailCandidato" required maxlength="50">
+          </label>
+          <label for="cpf">CPF:
+            <input type="text" name="cpf" id="cpfCandidato" required maxlength="11">
+          </label>
+          <label for="endereco">Endereço:
+            <input type="text" name="endereco" id="endereco" required maxlength="200">
+          </label>
+          <label for="cidade">Cidade:
+            <input type="text" name="cidade" id="cidade" required maxlength="28">
+          </label>
+          <label for="estado">Estado:</label>
+          <label for="tipo">
+            <input type="radio" name="tipo" id="casa" required>Casa
+            <input type="radio" name="tipo" id="apartamento" required>apartamento
+          </label>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
