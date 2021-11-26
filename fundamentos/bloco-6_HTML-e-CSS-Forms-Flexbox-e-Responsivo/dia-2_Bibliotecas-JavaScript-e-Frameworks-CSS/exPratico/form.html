@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   <title>Formulário de Currículo</title>
 </head>
 <body>
@@ -13,24 +14,33 @@
   </header>
   <main id="principal">
     <section id="container">
-      <form action="" class="row g-3">
-        <fieldset id="dadosPessoais" class="col-md-6">
-          <label for="nome" class="form-label">Nome:</label>
-          <input type="text" name="nome" class="form-control" id="nomeCandidato" required maxlength="40">
-          <label for="email" class="form-label">E-mail:</label>
-          <input type="email" name="email" class="form-control" id="emailCandidato" required maxlength="50">
-          <label for="cpf" class="form-label">CPF:
+      <form action="" >
+        <fieldset id="dadosPessoais" class="row g-3">
+          <legend>Dados Pessoais</legend>          
+          <div class="col-md-6  ">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" name="nome" class="form-control" id="nomeCandidato" required maxlength="40">
+          </div>
+          <div class="col-md-4">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" name="email" class="form-control" id="emailCandidato" required maxlength="50">  
+          </div>
+          <div class="col-md-3">
+            <label for="cpf" class="form-label">CPF:</label>
             <input type="text" name="cpf" class="form-control" id="cpfCandidato" required maxlength="11">
-          </label>
-          <label for="endereco" class="form-label">Endereço:
+          </div>
+          <div class="col-7">
+            <label for="endereco" class="form-label">Endereço:</label>
             <input type="text" name="endereco" class="form-control" id="endereco" required maxlength="200">
-          </label>
-          <label for="cidade" class="form-label">Cidade:
+          </div>
+          <div class="col-md-4">
+            <label for="cidade" class="form-label">Cidade:</label>
             <input type="text" name="cidade" class="form-control" id="cidade" required maxlength="28">
-          </label>
-          <label for="estados" class="form-label">Estados:
+          </div>
+          <div class="col-md-2">
+            <label for="estados" class="form-label">Estados:</label>
             <select name="estado" class="form-control" id="estados"></select>
-          </label>
+          </div>         
           <div>
             <label for="">Qual o tipo de residência:</label>
           </div>
