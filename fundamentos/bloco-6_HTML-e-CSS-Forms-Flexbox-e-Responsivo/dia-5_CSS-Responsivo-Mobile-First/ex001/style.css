@@ -89,3 +89,9 @@ p strong {
     display: flex;
   } 
 }
+
+@media screen and (min-width: 500px) {
+  p .trick {
+    display: flex;
+  }
+}
