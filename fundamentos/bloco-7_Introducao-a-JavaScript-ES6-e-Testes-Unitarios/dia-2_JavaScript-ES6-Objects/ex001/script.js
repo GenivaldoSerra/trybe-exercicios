@@ -36,8 +36,7 @@ const order = {
 
 const customerInfo = (order) => {
   // Adicione abaixo as informações necessárias.
-  Object.values(order);
-  console.log(order)
+  console.log(Object.entries(order));
 }
 
 
