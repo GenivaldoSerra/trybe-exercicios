@@ -36,7 +36,8 @@ const order = {
 
 const customerInfo = (order) => {
   // Adicione abaixo as informações necessárias.
-  console.log(Object.entries(order));
+  const info = new Map(Object.entries(order));
+  console.log(info);
 }
 
 
