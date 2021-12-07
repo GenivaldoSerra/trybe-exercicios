@@ -34,9 +34,17 @@ const order = {
   },
 };
 
+// 1 - Complete a função customerInfo() para que seu retorno seja similar a "Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701".
 const customerInfo = (order) => {
   // Adicione abaixo as informações necessárias.
+  let recebePedido = order.order.delivery.deliveryPerson;
+  let cliente = order.name;
+  let fone = order.phoneNumber;
+  let endereco = order.address.street;
+  let numero = order.address.number;
+  let apartamento = order.address.apartment;
 
+  console.log(`Olá ${recebePedido}, entrega para: ${cliente}, Telefone: ${fone}, R. ${endereco}, Nº: ${numero}, AP: ${apartamento}`);
 }
 
 customerInfo(order);
