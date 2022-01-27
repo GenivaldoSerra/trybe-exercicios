@@ -3,28 +3,38 @@ import React, { Component } from 'react';
 class FormularioTest extends Component {
   constructor() {
     super();
+    this.handleChange = this.handleChange.bind(this);
 
+    this.state = {
+      digitar: '',
+    };
+  }
 
-    this.state ={
-
-    }
+  handleChange(event) {
+    this.setState({
+      digitar: event.target.value,
+    });
   }
 
   render() {
     return (
-      <div>
-        <h1>Testando Formulários em React!</h1>
-        <form className="form">
-          <label htmlFor="">
-            Diga qualquer coisa:
-            <textarea name="txtform" id="" cols="30" rows="10"></textarea>
+      <section>
+        <form action="">
+          <label>
+            Nome:
+            <input type="text" value={this.state.digitar} onChange={this.handleChange} name="Nome" id="nome" />
           </label>
-          <input type="text" name="nome" id="iptnome"/>
-          <input type="email" name="E-mail" id="iptemail" />
+          <label>
+            E-mail:
+            <input type="email" name="E-mail" id="email" />
+          </label>
+          <div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
         </form>
-      </div>
+      </section>
     );
   }
-}
 
+}
 export default FormularioTest;
