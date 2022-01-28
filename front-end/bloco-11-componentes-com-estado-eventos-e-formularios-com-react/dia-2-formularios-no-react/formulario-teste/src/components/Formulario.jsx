@@ -77,6 +77,9 @@ class FormularioTest extends Component {
               onChange={this.handleChange}
             />
           </div>
+          <div>
+            <input type="file" />
+          </div>
         </form>
       </section>
     );
