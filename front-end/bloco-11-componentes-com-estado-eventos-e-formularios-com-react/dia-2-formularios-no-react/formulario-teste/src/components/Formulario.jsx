@@ -9,26 +9,31 @@ class FormularioTest extends Component {
       inputName: '',
       inputEmail: '',
       inputArea: '',
+      testeOk: false,
     };
   }
 
-  handleChangeNome = ({ target }) => {
+  handleChange = ({ target }) => {
+    console.log(target);
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+
     this.setState({
-      inputName: target.value,
+      [name]: target.value,
     });
   };
 
-  handleChangeEmail = ({ target }) => {
-    this.setState({
-      inputEmail: target.value,
-    });
-  };
+  // handleChangeEmail = ({ target }) => {
+  //   this.setState({
+  //     inputEmail: target.value,
+  //   });
+  // };
 
-  handleChangeArea = ({ target }) => {
-    this.setState({
-      inputArea: target.value,
-    });
-  };
+  // handleChangeArea = ({ target }) => {
+  //   this.setState({
+  //     inputArea: target.value,
+  //   });
+  // };
 
   render() {
     return (
@@ -39,8 +44,8 @@ class FormularioTest extends Component {
             <input 
               type="text" 
               value={this.state.inputName} 
-              onChange={this.handleChangeNome} 
-              name="Nome" 
+              onChange={this.handleChange} 
+              name="inputName" 
               id="nome" 
             />
           </label>
@@ -49,23 +54,30 @@ class FormularioTest extends Component {
             <input 
               type="email"
               value={this.state.inputEmail}
-              onChange={this.handleChangeEmail}
-              name="E-mail" 
+              onChange={this.handleChange}
+              name="inputEmail" 
               id="email" 
             />
           </label>
           <div>
             <textarea 
-              name="" 
+
+              name="inputArea" 
               id="" 
               cols="30" 
               rows="10"
               value={this.state.inputArea}
-              onChange={this.handleChangeArea}
+              onChange={this.handleChange}
             />
           </div>
           <div>
-            <button type="submit">Enviar Formulário</button>
+            <input 
+              type="checkbox" 
+              name="testeOk" 
+              id="chkTeste" 
+              value={this.state.testeOk}
+              onChange={this.handleChange}
+            />
           </div>
         </form>
       </section>
