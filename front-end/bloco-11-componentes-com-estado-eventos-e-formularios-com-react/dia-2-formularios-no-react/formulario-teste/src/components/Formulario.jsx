@@ -14,12 +14,11 @@ class FormularioTest extends Component {
   }
 
   handleChange = ({ target }) => {
-    console.log(target);
     const { name } = target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
 
     this.setState({
-      [name]: target.value,
+      [name]: value,
     });
   };
 
@@ -61,7 +60,6 @@ class FormularioTest extends Component {
           </label>
           <div>
             <textarea 
-
               name="inputArea" 
               id="" 
               cols="30" 
