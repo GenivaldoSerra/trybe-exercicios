@@ -3,33 +3,69 @@ import React, { Component } from 'react';
 class FormularioTest extends Component {
   constructor() {
     super();
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
 
     this.state = {
-      digitar: '',
+      inputName: '',
+      inputEmail: '',
+      inputArea: '',
     };
   }
 
-  handleChange(event) {
+  handleChangeNome = ({ target }) => {
     this.setState({
-      digitar: event.target.value,
+      inputName: target.value,
     });
-  }
+  };
+
+  handleChangeEmail = ({ target }) => {
+    this.setState({
+      inputEmail: target.value,
+    });
+  };
+
+  handleChangeArea = ({ target }) => {
+    this.setState({
+      inputArea: target.value,
+    });
+  };
 
   render() {
     return (
       <section>
         <form action="">
-          <label>
+          <label htmlFor="nome">
             Nome:
-            <input type="text" value={this.state.digitar} onChange={this.handleChange} name="Nome" id="nome" />
+            <input 
+              type="text" 
+              value={this.state.inputName} 
+              onChange={this.handleChangeNome} 
+              name="Nome" 
+              id="nome" 
+            />
           </label>
           <label>
             E-mail:
-            <input type="email" name="E-mail" id="email" />
+            <input 
+              type="email"
+              value={this.state.inputEmail}
+              onChange={this.handleChangeEmail}
+              name="E-mail" 
+              id="email" 
+            />
           </label>
           <div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea 
+              name="" 
+              id="" 
+              cols="30" 
+              rows="10"
+              value={this.state.inputArea}
+              onChange={this.handleChangeArea}
+            />
+          </div>
+          <div>
+            <button type="submit">Enviar Formulário</button>
           </div>
         </form>
       </section>
