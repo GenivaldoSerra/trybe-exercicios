@@ -23,17 +23,17 @@ class FormularioTest extends Component {
     });
   };
 
-  // handleChangeEmail = ({ target }) => {
-  //   this.setState({
-  //     inputEmail: target.value,
-  //   });
-  // };
+  handleChangeEmail = ({ target }) => {
+    this.setState({
+      inputEmail: target.value,
+    });
+  };
 
-  // handleChangeArea = ({ target }) => {
-  //   this.setState({
-  //     inputArea: target.value,
-  //   });
-  // };
+  handleChangeArea = ({ target }) => {
+    this.setState({
+      inputArea: target.value,
+    });
+  };
 
   render() {
     return (
